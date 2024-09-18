@@ -21,4 +21,4 @@ venv/
 *.sqlite3
 
 # FastHTML specific
-sesskey
+.sesskey

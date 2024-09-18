@@ -1,6 +1,11 @@
-def main():
-    print("Hello from commas!")
+from fasthtml.common import *
+
+app, rt = fast_app(pico=False)
 
 
-if __name__ == "__main__":
-    main()
+@rt('/')
+def get():
+    return Titled('Hello')
+
+
+serve()
